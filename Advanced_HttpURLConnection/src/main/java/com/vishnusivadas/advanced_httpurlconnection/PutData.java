@@ -28,7 +28,7 @@ public class PutData extends Thread {
     @Override
     public void run() {
         try {
-            String UTF8 = "UTF-8", iso = "iso-8859-1";
+            String UTF8 = "UTF-8", iso = "iso-8859-9";
             URL url = new URL(this.url);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestMethod(this.method);
