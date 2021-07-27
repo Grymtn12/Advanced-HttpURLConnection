@@ -45,7 +45,7 @@ public class PutData extends Thread {
             bufferedWriter.close();
             outputStream.close();
             InputStream inputStream = httpURLConnection.getInputStream();
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, iso));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
             StringBuilder result = new StringBuilder();
             String result_line;
             while ((result_line = bufferedReader.readLine()) != null) {
